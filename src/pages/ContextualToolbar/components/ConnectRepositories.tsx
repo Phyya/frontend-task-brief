@@ -8,9 +8,6 @@ const ConnectRepositories = () => {
     return (
 
         <div>
-
-
-
             <div>
                 <h3 className="block font-bold text-gray">
                     Connect repositories to{" "}
@@ -25,7 +22,7 @@ const ConnectRepositories = () => {
                     {CONNECT_REPOSITORIES_OPTIONS.map((event, index) => (
                         <CustomCheckbox
                             key={index}
-                            title={<p className="text-[0.9rem] font-semibold -mt-2 -ml-[10px]">{event}</p>}
+                            title={<p className="text-[0.9rem] font-medium -mt-2 -ml-[10px]">{event}</p>}
                         />
                     ))}
                 </div>

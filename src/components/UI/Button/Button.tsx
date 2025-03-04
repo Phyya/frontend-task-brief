@@ -1,6 +1,6 @@
 import React from "react"
 
-const Button = ({ children, onClick, className }: { children: React.ReactNode; onClick?: () => void; className?: string }) => {
+const Button = ({ children, onClick, className }: { children: React.ReactNode; onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void; className?: string }) => {
   return (
     <button
       onClick={onClick}

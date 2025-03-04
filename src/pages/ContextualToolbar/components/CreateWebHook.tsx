@@ -1,9 +1,9 @@
+import { motion, AnimatePresence } from "framer-motion"
 import Button from "@/components/UI/Button/Button"
 import CustomCheckbox from "@/components/UI/Checkbox/Checkbox"
 import CustomRadio from "@/components/UI/Checkbox/Radio"
 import Input from "@/components/UI/Input/Input"
 import { TOTAL_EVENTS_LIST } from "@/constants/deployment-options"
-import { motion, AnimatePresence } from "framer-motion"
 
 const CreateWebHook = () => {
 

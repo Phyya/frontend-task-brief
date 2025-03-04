@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import Button from "@/components/UI/Button/Button";
 import Input from "@/components/UI/Input/Input";
-import { motion } from "framer-motion";
 
 const CreateAPIKey = () => {
     const containerVariants = {
@@ -8,9 +8,9 @@ const CreateAPIKey = () => {
         visible: {
             opacity: 1,
             transition: {
-                duration: 0.4, // Fade speed
+                duration: 0.4,
                 ease: "easeInOut",
-                staggerChildren: 0.1, // Slight delay between items
+                staggerChildren: 0.1,
                 delayChildren: 0.1
             }
         }

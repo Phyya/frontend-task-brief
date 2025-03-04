@@ -8,10 +8,11 @@ import Button from '@/components/UI/Button/Button';
 import CreateWebHook from './components/CreateWebHook';
 import ConnectRepositories from './components/ConnectRepositories';
 import CreateAPIKey from './components/CreateAPIKey';
+import ShareWorkSpace from './components/ShareWorkspace';
 
 
 const ContextualToolbar = () => {
-  const options = ['Create webhook', 'Connect repositories', 'Create API Key'];
+  const options = ['Create webhook', 'Connect repositories', 'Create API Key', 'Share workspace'];
   const [selectedForm, setSelectedForm] = useState("Create webhook");
 
   const renderForm = () => {
@@ -22,6 +23,8 @@ const ContextualToolbar = () => {
         return <ConnectRepositories />;
       case options[2]:
         return <CreateAPIKey />;
+      case options[3]:
+        return <ShareWorkSpace />;
       default:
         return null;
     }
