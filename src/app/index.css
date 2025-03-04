@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    color: #737373;
+    font-family: 'Inter', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    /* For Safari and Chrome */
+    -webkit-touch-callout: none;
+    /* Disable long press menu on iOS */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
