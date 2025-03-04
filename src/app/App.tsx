@@ -1,10 +1,10 @@
 import { FC } from "react";
 import { Route, Routes } from "react-router-dom";
-import { NoMatch } from "@/pages";
 import CalendarWidget from "@/pages/CalendarWidget/CalendarWidget";
 import ContextualToolbar from "@/pages/ContextualToolbar/ContextualToolbar";
 import Layout from "./Layout/Layout";
 import { AnimatePresence } from "framer-motion";
+import NoMatch from "@/pages/NoMatch/NoMatch";
 
 const App: FC = () => {
   return (
