@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { LuCopy } from "react-icons/lu";
 import Button from "@/components/UI/Button/Button";
-import Switch from "@/components/UI/Checkbox/Switch";
+import Switch from "@/components/UI/Controls/Switch";
 import Input from "@/components/UI/Input/Input";
 import { ToastContainer, } from 'react-toastify';
 import { showToast } from "@/components/UI/Toast/Toast";

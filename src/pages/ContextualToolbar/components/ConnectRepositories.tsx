@@ -1,5 +1,5 @@
 import Button from "@/components/UI/Button/Button";
-import CustomCheckbox from "@/components/UI/Checkbox/Checkbox";
+import CustomCheckbox from "@/components/UI/Controls/Checkbox";
 import { CONNECT_REPOSITORIES_OPTIONS } from "@/constants/deployment-options";
 
 const ConnectRepositories = () => {

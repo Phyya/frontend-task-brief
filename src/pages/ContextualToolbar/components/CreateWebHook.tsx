@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion"
 import Button from "@/components/UI/Button/Button"
-import CustomCheckbox from "@/components/UI/Checkbox/Checkbox"
-import CustomRadio from "@/components/UI/Checkbox/Radio"
+import CustomCheckbox from "@/components/UI/Controls/Checkbox"
+import CustomRadio from "@/components/UI/Controls/Radio"
 import Input from "@/components/UI/Input/Input"
 import { TOTAL_EVENTS_LIST } from "@/constants/deployment-options"
 
