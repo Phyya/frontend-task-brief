@@ -42,7 +42,7 @@ const ShareWorkSpace = () => {
     };
     const handleCopy = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.stopPropagation();
-        const textToCopy = "/mylink.com";
+        const textToCopy = value;
         navigator.clipboard.writeText(textToCopy)
             .then(() => {
                 showToast("Link to secret key copied!", "success");
