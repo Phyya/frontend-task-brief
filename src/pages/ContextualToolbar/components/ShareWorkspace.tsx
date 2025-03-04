@@ -100,12 +100,12 @@ const ShareWorkSpace = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.4, ease: 'easeInOut' }}
-                    onClick={(e) => e.stopPropagation()} // Stops toggling when clicking inside
+                    onClick={(e) => e.stopPropagation()}
                 >
                     <motion.p variants={itemVariants} className="mt-1 flex justify-between text-gray">
                         <h3 className="block font-semibold text-gray">Sharing is on</h3>
                         <span>
-                            <Switch title="" defaultChecked />
+                            <Switch title="" defaultChecked onChange={() => setExpanded(false)} />
                         </span>
                     </motion.p>
 
