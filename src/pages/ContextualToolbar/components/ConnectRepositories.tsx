@@ -7,9 +7,9 @@ const ConnectRepositories = () => {
 
     return (
 
-        <div>
-            <div>
-                <h3 className="block font-bold text-gray">
+        <div className="rounded-lg bg-secondary border border-tertiary px-3 shadow-sm">
+            <div >
+                <h3 className="block font-bold text-gray pt-3">
                     Connect repositories to{" "}
                     <span className="bg-purple-100 text-primary text-sm px-2 py-1 rounded font-bold mx-[0.5px]">
                         acme
@@ -30,7 +30,7 @@ const ConnectRepositories = () => {
             </div>
             <div className="flex justify-end space-x-4 my-4 mt-6">
                 <Button className="!text-black bg-transparent shadow-none">Cancel</Button>
-                <Button className="!bg-primary border-2 border-primary !text-white">Connect repositories</Button>
+                <Button className="!bg-primary border-2 border-purple-500 !text-white">Connect repositories</Button>
             </div>
         </div>
 

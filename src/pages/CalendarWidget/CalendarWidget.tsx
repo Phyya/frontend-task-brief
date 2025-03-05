@@ -29,7 +29,7 @@ const CalendarWidget = () => {
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       <div className="bg-white rounded-2xl shadow-sm h-[90vh] my-10 ">
-        <div className='relative flex max-[980px]:flex-col justify-around items-center min-[980px]:p-10 h-full w-[85%]  mx-auto gap-6 '>
+        <div className='relative flex max-[980px]:flex-col justify-around items-center min-[980px]:p-10 max-[980px]:h-auto h-full w-[85%]  mx-auto gap-6 '>
 
           <div className=" w-full min-[980px]:w-[50%]  relative max-[980px]:h-auto h-full flex max-[980px]:flex-col  min-[980px]:items-center">
             <div className=' min-[980px]:my-auto space-y-4'>

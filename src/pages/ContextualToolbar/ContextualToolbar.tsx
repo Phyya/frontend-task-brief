@@ -38,7 +38,7 @@ const ContextualToolbar = () => {
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       <div className="bg-white rounded-2xl shadow-sm h-[90vh] my-10 transition-all duration-300 ">
-        <div className='relative flex max-[1000px]:flex-col justify-between items-center  min-[980px]:p-10 h-full w-[85%]  mx-auto gap-5 '>
+        <div className='relative flex max-[1000px]:flex-col justify-start min-[1000px]:justify-between items-center  min-[980px]:p-10 h-auto min-[1000px]:h-full w-[85%]  mx-auto gap-5 '>
           <div className="max-[1000px]:w-full w-[40%] relative flex flex-col gap-6 h-full">
             <div className='space-y-4 h-full '>
               <div className='my-auto  max-[1000px]:mt-0 mt-36'>
