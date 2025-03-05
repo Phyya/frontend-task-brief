@@ -44,7 +44,7 @@ const CalendarWidget = () => {
               </div>
 
             </div>
-            <Link to="/contextual-toolbar" className='min-[980px]:absolute max-[980px]:my-10 left-0 bottom-0'>
+            <Link to="/contextual-toolbar" className='min-[980px]:absolute max-[980px]:my-10 left-0 bottom-0 w-max'>
               <Button className='border border-tertiary bg-white text-black  transition-all duration-300 rounded-md'>Next task</Button>
             </Link>
 
