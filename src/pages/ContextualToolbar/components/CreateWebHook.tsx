@@ -42,7 +42,7 @@ const CreateWebHook = () => {
 
                     <motion.div variants={CreateWebHookItemVariants}>
                         <label className="block font-medium text-gray">Events</label>
-                        <div className="grid min-[1300px]:grid-cols-2 gap-[1.2rem] mt-2 bg-tertiary px-4 py-4 pt-6 rounded-lg">
+                        <div className="grid min-[460px]:grid-cols-2 gap-[1.2rem] mt-2 bg-tertiary px-4 py-4 pt-6 rounded-lg">
                             {TOTAL_EVENTS_LIST.map((event, index) => (
                                 <motion.div key={index} variants={CreateWebHookItemVariants}>
                                     <CustomCheckbox title={<p className='text-sm font-semibold -mt-2 -ml-[10px]'>{event}</p>} defaultChecked />
