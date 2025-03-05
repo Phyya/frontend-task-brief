@@ -43,20 +43,20 @@ const ContextualToolbar = () => {
             <div className='space-y-4 h-full '>
               <div className='my-auto  max-[1000px]:mt-0 mt-36'>
                 <h2 className="text-lg font-semibold">Contextual Toolbar</h2>
-                <p className="text-sm text-gray-500 w-3/4 mt-3 mb-4">
+                <p className="text-sm text-gray-500 w-3/4 max-[480px]:w-full mt-3 mb-4">
                   A toolbar that suggests and enables actions based on users' navigation.
                 </p>
-                <p className="text-sm text-gray-500 w-3/4">
+                <p className="text-sm text-gray-500 w-3/4 max-[480px]:w-full">
                   Suggestions are related to the current page and users can perform actions in the component without changing page or context.
                 </p>
                 <div className="flex gap-2 mt-4">
-                  <span className="px-2 py-1 bg-tertiary text-gray font-medium text-xs rounded">React</span>
-                  <span className="px-2 py-1 bg-tertiary text-gray font-medium text-xs rounded">Tailwind CSS</span>
-                  <span className="px-2 py-1 bg-tertiary text-gray font-medium text-xs rounded">Motion (Framer Motion)</span>
+                  <span className="px-2 py-1 bg-tertiary text-gray font-medium text-xs rounded whitespace-nowrap">React</span>
+                  <span className="px-2 py-1 bg-tertiary text-gray font-medium text-xs rounded whitespace-nowrap">Tailwind CSS</span>
+                  <span className="px-2 py-1 bg-tertiary text-gray font-medium text-xs rounded whitespace-nowrap">Motion (Framer Motion)</span>
                 </div>
               </div>
             </div>
-            <Link to="/" className='min-[1300px]:absolute left-0 bottom-0'>
+            <Link to="/" className='min-[1300px]:absolute left-0 bottom-0 w-max'>
               <Button className='border border-tertiary bg-white text-black  transition-all duration-300 rounded-md'>
                 Previous task
               </Button>
