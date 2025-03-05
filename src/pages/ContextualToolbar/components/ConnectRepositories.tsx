@@ -7,9 +7,9 @@ const ConnectRepositories = () => {
 
     return (
 
-        <div>
-            <div>
-                <h3 className="block font-bold text-gray">
+         <div className="rounded-lg bg-secondary border border-tertiary px-3 shadow-sm">
+            <div >
+                <h3 className="block font-bold text-gray pt-3">
                     Connect repositories to{" "}
                     <span className="bg-purple-100 text-primary text-sm px-2 py-1 rounded font-bold mx-[0.5px]">
                         acme
