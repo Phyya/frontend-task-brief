@@ -1,36 +1,10 @@
 import { motion } from "framer-motion";
 import Button from "@/components/UI/Button/Button";
 import Input from "@/components/UI/Input/Input";
+import { buttonContainerVariants, containerVariants, itemVariants } from "@/styles/transition-variants";
 
 const CreateAPIKey = () => {
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                duration: 0.4,
-                ease: "easeInOut",
-                staggerChildren: 0.1,
-                delayChildren: 0.1
-            }
-        }
-    };
 
-    const itemVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { duration: 0.4, ease: "easeInOut" }
-        }
-    };
-
-    const buttonContainerVariants = {
-        hidden: { opacity: 0, x: -50 },
-        visible: {
-            opacity: 1, x: 0,
-            transition: { duration: 0.4, ease: "easeOut" }
-        }
-    };
 
     return (
         <motion.div

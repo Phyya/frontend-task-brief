@@ -23,3 +23,10 @@
     scrollbar-width: none;
     /* Firefox */
 }
+
+.Toastify__toast-container--bottom-center {
+    bottom: 0em !important;
+    right: 1em !important;
+    left: auto !important;
+    transform: none !important;
+}

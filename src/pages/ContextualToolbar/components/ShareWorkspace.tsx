@@ -6,42 +6,15 @@ import Switch from "@/components/UI/Controls/Switch";
 import Input from "@/components/UI/Input/Input";
 import { ToastContainer, } from 'react-toastify';
 import { showToast } from "@/components/UI/Toast/Toast";
+import { buttonContainerVariants, containerVariants, itemVariants } from "@/styles/transition-variants";
 
 const ShareWorkSpace = () => {
 
     const [expanded, setExpanded] = useState(false);
     const [value, setValue] = useState("");
 
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                duration: 0.4,
-                ease: "easeInOut",
-                staggerChildren: 0.1,
-                delayChildren: 0.1
-            }
-        }
-    };
+    const handleCopy = () => {
 
-    const itemVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { duration: 0.4, ease: "easeInOut" }
-        }
-    };
-
-    const buttonContainerVariants = {
-        hidden: { opacity: 0, x: -50 },
-        visible: {
-            opacity: 1, x: 0,
-            transition: { duration: 0.4, ease: "easeOut" }
-        }
-    };
-    const handleCopy = (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.stopPropagation();
         const textToCopy = value;
         navigator.clipboard.writeText(textToCopy)
             .then(() => {
@@ -132,7 +105,8 @@ const ShareWorkSpace = () => {
                 <Button className="!text-black bg-transparent shadow-none">Cancel</Button>
                 <Button className="bg-primary border-2 border-primary text-white">Connect secret key</Button>
             </motion.div>
-            <ToastContainer limit={1} />
+            <ToastContainer limit={1} className="!z-[10000]  [&>div]:!rounded-[0.8rem]  [&>div]:!py-1  [&>div]:!font-bold [&>div]:!shadow-md"
+            />
 
         </motion.div>
 

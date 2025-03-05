@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 export const showToast = (message: string, type: "success" | "error" = "success") => {
     toast(message, {
         type: type,
-        position: "bottom-right",
+        position: "bottom-center",
         autoClose: 2000,
         hideProgressBar: true,
         rtl: false,
